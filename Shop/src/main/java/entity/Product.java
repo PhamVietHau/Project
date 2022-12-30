@@ -1,7 +1,9 @@
 package entity;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "product")
@@ -21,7 +23,7 @@ public class Product {
 
 
     @OneToMany(mappedBy = "product")
-    private List<Amount> amountList;
+    private Set<Amount> amountList = new HashSet<>();
     @OneToOne(mappedBy = "product")
     private OrderDetail orderDetail;
     @OneToOne
@@ -77,11 +79,11 @@ public class Product {
         this.image = image;
     }
 
-    public List<Amount> getAmountList() {
+    public Set<Amount> getAmountList() {
         return amountList;
     }
 
-    public void setAmountList(List<Amount> amountList) {
+    public void setAmountList(Set<Amount> amountList) {
         this.amountList = amountList;
     }
 
@@ -117,7 +119,7 @@ public class Product {
         this.status = status;
     }
 
-    public Product(int id, String name, String tag, String description, String image, List<Amount> amountList, OrderDetail orderDetail, ProductType productType, Price price, Status status) {
+    public Product(int id, String name, String tag, String description, String image, Set<Amount> amountList, OrderDetail orderDetail, ProductType productType, Price price, Status status) {
         this.id = id;
         this.name = name;
         this.tag = tag;
@@ -129,5 +131,6 @@ public class Product {
         this.price = price;
         this.status = status;
     }
+
 
 }

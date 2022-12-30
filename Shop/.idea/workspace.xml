@@ -49,6 +49,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.82" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Shop_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -150,7 +163,7 @@
       <workItem from="1672241209147" duration="4050000" />
       <workItem from="1672245844960" duration="8000" />
       <workItem from="1672284452284" duration="10108000" />
-      <workItem from="1672310568523" duration="309000" />
+      <workItem from="1672310568523" duration="730000" />
     </task>
     <servers />
   </component>
