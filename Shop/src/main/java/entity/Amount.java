@@ -7,9 +7,9 @@ import javax.persistence.*;
 public class Amount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id")
+//    @Column(name = "Id")
     private int id;
-    @Column(name = "Amount")
+//    @Column(name = "Amount")
     private int amount;
 
     @ManyToOne

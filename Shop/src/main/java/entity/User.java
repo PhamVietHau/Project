@@ -20,6 +20,11 @@ public class User {
     private List<Order> orderList;
     @OneToMany(mappedBy = "user")
     private List<ShippingInfo> shippingInfoList;
+    @ManyToOne
+    @JoinColumn(name = "RoleId")
+    private Role role;
+
+
 
     public User() {
     }

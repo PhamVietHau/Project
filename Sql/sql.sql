@@ -15,7 +15,7 @@ create table user(
 
 create table role(
 	id int primary key auto_increment,
-    `role` text
+    `role` VARCHAR(510)
 );
 
 create table ShippingInfo(
@@ -27,7 +27,7 @@ create table ShippingInfo(
     city varchar(510),
     county varchar(510),
     country varchar(510),
-    other text
+    other VARCHAR(10000)
 );
 
 
@@ -40,7 +40,7 @@ create table ShippingType(
 create table Coupon(
 	id int primary key auto_increment,
     `name` varchar(510),
-    `description` text,
+    `description` VARCHAR(10000),
     `code` varchar(20),
     discount int,
     maxDiscountAmount int,
@@ -87,8 +87,8 @@ create table Product(
     `name` varchar(510),
     priceId int,
     tag varchar(510),
-    `description` text,
-    image text,
+    `description` VARCHAR(10000),
+    image VARCHAR(550),
     statusId int
 );
 
@@ -98,7 +98,7 @@ create table ProductType(
 );
 
 create table Amount(
-	-- id int primary key auto_increment, 
+	id int primary key auto_increment,
 	productId int,
     colorId int,
     sizeId int,
@@ -138,7 +138,12 @@ insert into Amount (productId,colorId,sizeId,amount) values (1,3,1,50),(1,3,2,50
 	 (2,4,1,50),(2,4,2,50),(2,4,3,50),(2,4,4,50),(2,4,5,50),(2,4,6,50);
 insert into Product values (1,1,'Áo Thun Xanh',1,'','Áo thun xanh','Ao_thun_xanh.png',1),
 	(2,2,'Áo khoác',2,'','Áo khoác','Ao_khoac.pngamount',1);
-
+UPDATE `shopv1`.`product` SET `image` = 'https://i.imgur.com/p1eTzdA.jpghttps://i.imgur.com/p1eTzdA.jpg' WHERE (`id` = '1');
+UPDATE `shopv1`.`product` SET `productTypeId` = '1', `name` = 'Áo Thun Nâu', `priceId` = '1', `description` = 'Áo Thun Nâu', `image` = 'https://i.imgur.com/euLQKCQ.jpg' WHERE (`id` = '2');    
+INSERT INTO `shopv1`.`color` (`id`, `name`) VALUES ('5', 'Brown');
+INSERT INTO `shopv1`.`orderdetail` (`id`, `orderId`, `productId`, `quantity`, `total`) VALUES ('1', '1', '1', '1', '100000');
+INSERT INTO `shopv1`.`paymentmethod` (`id`, `name`) VALUES ('1', 'Tiền mặt');
+INSERT INTO `shopv1`.`paymentmethod` (`id`, `name`) VALUES ('2', 'Thanh toán online');
 
 
 

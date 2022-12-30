@@ -26,12 +26,12 @@ public class Coupon {
     @Column(name = "Usage")
     private int usage;
     @Column(name = "Enable")
-    private int enable;
+    private boolean enable;
 
     @OneToMany(mappedBy = "coupon")
     private List<Order> orderList;
 
-    public Coupon(int id, String name, String description, String code, int discount, int maxDiscountAmount, Date expired, int usage, int enable, List<Order> orderList) {
+    public Coupon(int id, String name, String description, String code, int discount, int maxDiscountAmount, Date expired, int usage, boolean enable, List<Order> orderList) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -108,11 +108,11 @@ public class Coupon {
         this.usage = usage;
     }
 
-    public int getEnable() {
+    public boolean getEnable() {
         return enable;
     }
 
-    public void setEnable(int enable) {
+    public void setEnable(boolean enable) {
         this.enable = enable;
     }
 
