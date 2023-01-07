@@ -1,76 +1,35 @@
 package entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
 @Table(name = "amount")
 public class Amount {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "Id")
-    private int id;
-//    @Column(name = "Amount")
-    private int amount;
 
+    @JsonIgnore
+    @EmbeddedId
+    private AmountPK amountPK;
+    //    private int productId;
+    @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "ProductId")
+    @MapsId("productId")
     private Product product;
-
-    @OneToOne
-    @JoinColumn(name = "ColorId")
+    //    private int colorId;
+    @ManyToOne
+    @MapsId("colorId")
     private Color color;
-    @OneToOne
-    @JoinColumn(name = "SizeId")
+    //    private int sizeId;
+    @ManyToOne
+    @MapsId("sizeId")
     private Size size;
-
-    public Amount(int id, int amount, Product product, Color color, Size size) {
-        this.id = id;
-        this.amount = amount;
-        this.product = product;
-        this.color = color;
-        this.size = size;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
-    public Size getSize() {
-        return size;
-    }
-
-    public void setSize(Size size) {
-        this.size = size;
-    }
-
-    public Amount() {
-    }
+    private int amount;
+    private String image;
 }

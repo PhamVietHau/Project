@@ -1,6 +1,5 @@
 package repository;
 
-import entity.Amount;
 import entity.Role;
 import org.springframework.data.repository.CrudRepository;
 
