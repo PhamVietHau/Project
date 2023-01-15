@@ -42,22 +42,19 @@
 
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form2Example17">Tài Khoản</label>
-                                        <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                                        <input name="username" type="text" id="form2Example17" class="form-control form-control-lg" />
                                     </div>
 
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form2Example27">Mật Khẩu</label>
-                                        <input type="password" id="form2Example27" class="form-control form-control-lg" />
-
+                                        <input name="password" type="password" id="form2Example27" class="form-control form-control-lg" />
                                     </div>
 
                                     <div class="pt-1 mb-4">
                                         <input class="btn btn-dark btn-lg btn-block" type="submit" value="Đăng nhập" name="submit"></input>
                                     </div>
-
-                                    <a class="small text-muted" href="admin">Admin Đăng Nhập</a>
-                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Chưa có tài khoản? <a href="#!" style="color: #393f81;">Tạo tài khoản mới</a></p>
                                     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Chưa có tài khoản? <a href="regist" style="color: #393f81;">Tạo tài khoản mới</a></p>
                                 </form>
 
                             </div>
@@ -68,5 +65,6 @@
         </div>
     </div>
 </section>
+
 </body>
 </html>

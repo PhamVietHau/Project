@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface UserRepository extends CrudRepository<User, Integer> {
 
-    @Query(value = "select userName, role from user,role where role.id = user.id and userName=?",nativeQuery = true)
+    @Query(value = "select u.username, r.role from user as u join role as r on u.roleId = r.id where u.username =?1",nativeQuery = true)
     public User findUserByName(String name);
 }

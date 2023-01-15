@@ -130,7 +130,7 @@ begin
 end//
 
 
-insert into `Role` (`role`) values ('ADMIN'),('USER');
+insert into `Role` (`role`) values ('ROLE_ADMIN'),('ROLE_USER');
 insert into `User` (roleId,userName,`password`,email,`enable`) values (1,'Admin','{noop}Admin','Admin@shops.com',1),(2,'User1','{noop}User1','User1@gmail.com',1);
 insert into Color (`name`) values ('Red'),('Blue'),('Green'),('Black');
 insert into Size (`name`) values ('XS'),('S'),('M'),('L'),('XL'),('XXL');

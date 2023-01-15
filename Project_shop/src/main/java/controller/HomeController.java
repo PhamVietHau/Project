@@ -6,14 +6,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import service.ProductService;
 
+import java.security.Principal;
+
 @Controller
+
 public class HomeController {
     @Autowired
     private ProductService productService;
-
-
-
-    @RequestMapping(value = "/")
+    @RequestMapping(value = {"/","home"})
     public String home (Model model){
         model.addAttribute("products", productService.all());
         model.addAttribute("productShirt",productService.findShirtsAndCoats());
@@ -21,4 +21,12 @@ public class HomeController {
         model.addAttribute("shop",productService.allDescId());
         return "Home";
     }
+
+
+
+
+
+
+
+
 }
