@@ -42,4 +42,9 @@ public class ProductServiceIpm implements ProductService {
     public List<Product> allDescId() {
         return productRepository.allDescId();
     }
+
+    @Override
+    public Product getProductById (int id) {
+        return (Product) productRepository.findById(id).get();
+    }
 }

@@ -11,4 +11,5 @@ public interface ProductService {
     public List<Product> findPants();
     public List<Product> findShirtsAndCoats();
     public List<Product> allDescId();
+    public Product getProductById(int id);
 }

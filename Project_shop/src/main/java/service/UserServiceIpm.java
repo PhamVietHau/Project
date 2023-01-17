@@ -31,7 +31,7 @@ public class UserServiceIpm implements UserService{
     }
     @Override
     public User findUser(String name){
-        return userRepository.findUserByName(name);
+        return userRepository.findUserByUserName(name);
     }
 
 

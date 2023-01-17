@@ -99,7 +99,7 @@
                     <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa-regular fa-user"></i> Tài Khoản</a>
                     <div class="dropdown-menu" >
-                        <a class="dropdown-item" href="check">Đăng Nhập</a>
+                        <a class="dropdown-item" href="admin">Đăng Nhập</a>
                         <a class="dropdown-item" href="regist">Đăng ký</a>
                     </div>
                 </li>
@@ -142,8 +142,6 @@
         <div class="carousel-item">
             <img class="d-block w-100" src="https://i.imgur.com/U9OrjLy.png/800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
             <div class="carousel-caption d-none d-md-block " >
-
-
             </div>
         </div>
     </div>
@@ -170,7 +168,7 @@
 <div class="card-deck" style="padding: 0 10%;">
     <c:forEach var="i" items="${shop}" begin="0" end="7">
         <div class="col-md-3 md-col" style="margin: 10px 0">
-            <a href="" style="color: black;">
+            <a href="product/product_detail" style="color: black;">
                 <div class="col-md" >
                     <div class="view overlay zoom">
                         <img src="${i.image}" class="img-fluid " alt="smaple image">

@@ -131,7 +131,7 @@ end//
 
 
 insert into `Role` (`role`) values ('ROLE_ADMIN'),('ROLE_USER');
-insert into `User` (roleId,userName,`password`,email,`enable`) values (1,'Admin','{noop}Admin','Admin@shops.com',1),(2,'User1','{noop}User1','User1@gmail.com',1);
+insert into `User` (roleId,userName,`password`,email,`enable`) values (1,'Admin','{noop}Admin','Admin@shops.com',1),(2,'User1','{noop}User1','User1@gmail.com',1),(2,'user2','{noop}123','User2@gmail.com',1);
 insert into Color (`name`) values ('Red'),('Blue'),('Green'),('Black');
 insert into Size (`name`) values ('XS'),('S'),('M'),('L'),('XL'),('XXL');
 insert into Coupon values (1,'Tết Nguyên Đán 2023','Mừng Tết Nguyên Đán 2023, Giảm giá sặp sàn','2023',100,100000,current_timestamp(),999);
