@@ -18,4 +18,8 @@ public interface ProductRepository extends CrudRepository<Product,Integer> {
     //sap xep giam theo id
     @Query(value = "SELECT * FROM product order by id desc ",nativeQuery = true )
     public List<Product> allDescId();
+
+    //tim product id
+
+    public Product findProductById(int id);
 }

@@ -47,4 +47,9 @@ public class ProductServiceIpm implements ProductService {
     public Product getProductById (int id) {
         return (Product) productRepository.findById(id).get();
     }
+
+    @Override
+    public Product getProductByName(int String) {
+        return null;
+    }
 }

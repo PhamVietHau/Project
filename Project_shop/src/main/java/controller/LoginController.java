@@ -4,6 +4,7 @@ import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import service.ProductService;
 import service.UserService;
@@ -56,4 +57,17 @@ public class LoginController {
         return "admin";
     }
 
+
+    @RequestMapping(value = "regist")
+    public String requestRegist(Model model){
+        model.addAttribute("user", new User());
+        return "regist";
+    }
+
+
+    @RequestMapping(value = "addUser")
+    public String add(@ModelAttribute User user ){
+        userService.save(user);
+        return "redirect:user";
+    }
 }

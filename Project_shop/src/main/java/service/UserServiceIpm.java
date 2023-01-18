@@ -27,8 +27,14 @@ public class UserServiceIpm implements UserService{
     @Override
     public void save(User user) {
         userRepository.save(user);
-
     }
+
+    @Override
+    public Object saveU(User user) {
+        userRepository.save(user);
+        return null;
+    }
+
     @Override
     public User findUser(String name){
         return userRepository.findUserByUserName(name);

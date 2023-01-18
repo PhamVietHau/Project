@@ -27,7 +27,6 @@ public class User {
     private String password;
     private String email;
     private Date timeCreate;
-
     @JsonIgnore
     @OneToMany(mappedBy = "user")
     private List<Orders> ordersList;
