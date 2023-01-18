@@ -29,7 +29,7 @@
 <!--        <security:intercept-url pattern="/check**" access="hasRole('ROLE_USER') or-->
 <!--                                                           hasRole('ROLE_ADMIN')"/>-->
         <security:intercept-url pattern="/user**" access="hasRole('ROLE_USER') " />
-        <security:intercept-url pattern="/admin**" access="hasRole('ROLE_ADMIN')" />
+        <security:intercept-url pattern="/admin**" access="hasRole('ROLE_ADMIN') " />
 
         <security:logout logout-url="/j_spring_security_logout" logout-success-url="/" delete-cookies="JSESSIONID" />
     </security:http>

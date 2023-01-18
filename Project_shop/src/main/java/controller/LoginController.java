@@ -51,9 +51,8 @@ public class LoginController {
     }
 
     @RequestMapping(value = "admin")
-    public String admin(Principal principal){
+    public String admin(Model model, Principal principal){
         String name = principal.getName();
-        User u= userService.findUser(principal.getName());
         return "admin";
     }
 
