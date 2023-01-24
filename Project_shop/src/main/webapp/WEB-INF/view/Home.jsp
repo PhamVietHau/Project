@@ -169,7 +169,7 @@
 <div class="card-deck" style="padding: 0 10%;">
     <c:forEach var="i" items="${shop}" begin="0" end="7">
         <div class="col-md-3 md-col" style="margin: 10px 0">
-            <a href="product/product_detail" style="color: black;">
+            <a href="product/product_detail?id=${i.id}" style="color: black;">
                 <div class="col-md" >
                     <div class="view overlay zoom">
                         <img src="${i.image}" class="img-fluid " alt="smaple image">

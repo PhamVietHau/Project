@@ -30,9 +30,9 @@ public class UserServiceIpm implements UserService{
     }
 
     @Override
-    public Object saveU(User user) {
-        userRepository.save(user);
-        return null;
+    public String addU(User user) {
+         userRepository.save(user);
+         return "Success";
     }
 
     @Override

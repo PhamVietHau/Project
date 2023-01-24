@@ -19,7 +19,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    //    private int roleId;
+
     @ManyToOne
     @JoinColumn(name = "roleId")
     private Role role;
@@ -27,6 +27,7 @@ public class User {
     private String password;
     private String email;
     private Date timeCreate;
+    private int enable;
     @JsonIgnore
     @OneToMany(mappedBy = "user")
     private List<Orders> ordersList;

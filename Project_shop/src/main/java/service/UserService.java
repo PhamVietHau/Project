@@ -8,6 +8,6 @@ public interface UserService {
     public List<User> all();
     public void delete(int id);
     public void save(User user);
-    public Object saveU(User user);
+    public String addU(User user);
     public User findUser(String name);
 }

@@ -11,7 +11,7 @@ create table user(
 	`password` varchar(510),
 	email varchar(510),
 	timeCreate datetime default current_timestamp,
-    `enable` TINYINT(3)
+    `enable` int
 );
 
 create table role(
@@ -100,7 +100,7 @@ create table Amount(
     color_id int,
     size_id int,
     amount int,
-    image varchar(510)
+    image varchar(1000)
 );
 
 create table Color(
@@ -140,9 +140,19 @@ insert into Price values (1,80000,current_timestamp(),date_add(current_timestamp
 insert into ProductType values (1,'Áo Thun'),(2,'Áo Khoác'),(3,'Quần');
 insert into ShippingType values (1,'Nhanh',50000),(2,'Thường',30000);
 insert into `Status` values (1,'Enable'),(2,'Disable'),(3,'Delete');
-insert into Amount (product_id,color_id,size_id,amount) values 
-(1,3,1,50,'https://i.imgur.com/RGZyhxE.jpg' ),(1,3,2,50),(1,3,3,50),(1,3,4,50),(1,3,5,50),(1,3,6,50),
-	 (2,4,1,50),(2,4,2,50),(2,4,3,50),(2,4,4,50),(2,4,5,50),(2,4,6,50);
+insert into Amount (product_id,color_id,size_id,amount, image) values 
+(1,3,1,50,'https://i.imgur.com/RGZyhxE.jpg' ),
+(1,3,2,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(1,3,3,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(1,3,4,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(1,3,5,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(1,3,6,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(2,4,1,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(2,4,2,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(2,4,3,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(2,4,4,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(2,4,5,50,'https://i.imgur.com/RGZyhxE.jpg'),
+(2,4,6,50,'https://i.imgur.com/RGZyhxE.jpg');
      
      
 insert into Product values (1,1,'Áo Thun',1,'Áo thun','Ao_thun_xanh.png'),
@@ -164,6 +174,10 @@ insert into Product values (6,3,'Quần Tây ',3,'Quần Tây','https://i.imgur.
     (9,3,'Quần ống vải len',3,'Quần ống vải len','https://i.imgur.com/AUtW9Bg.png');
 insert into Price values (3,120000,current_timestamp(),date_add(current_timestamp(),interval 365 day)),
 	(4,200000,current_timestamp(),date_add(current_timestamp(),interval 365 day));
+UPDATE `shopv3`.`color` SET `name` = 'red' WHERE (`id` = '1');
+UPDATE `shopv3`.`color` SET `name` = 'green' WHERE (`id` = '2');
+UPDATE `shopv3`.`color` SET `name` = 'black' WHERE (`id` = '3');
+UPDATE `shopv3`.`color` SET `name` = 'white' WHERE (`id` = '4');
 
 
 

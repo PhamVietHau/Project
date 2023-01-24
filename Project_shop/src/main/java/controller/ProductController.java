@@ -14,7 +14,7 @@ import service.ProductTypeService;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-@RestController
+
 @Controller
 @RequestMapping(value = "product")
 public class ProductController {
