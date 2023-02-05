@@ -52,4 +52,9 @@ public class ProductServiceIpm implements ProductService {
     public Product getProductByName(int String) {
         return null;
     }
+
+    @Override
+    public List<Product> findProductByName(String name) {
+        return productRepository.SearchingProduct(name);
+    }
 }

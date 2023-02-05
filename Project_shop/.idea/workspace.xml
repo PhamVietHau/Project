@@ -10,43 +10,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82d4c615-c8a7-4452-a0d5-e5fb8d966690" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Searching.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/SearchPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/RoleServiceIpm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/RoleServiceIpm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserServiceIpm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserServiceIpm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProductServiceIpm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductServiceIpm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/SizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SizeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/SizeServiceIpm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SizeServiceIpm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/regist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/controller/HomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/RoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/RoleServiceIpm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/RoleServiceIpm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/UserServiceIpm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/UserServiceIpm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/ProductServiceIpm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/ProductServiceIpm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/SizeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/SizeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/SizeServiceIpm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/classes/service/SizeServiceIpm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/spring-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/view/Detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/view/Detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/view/Home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/view/Home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/view/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Shop-1.0-SNAPSHOT/WEB-INF/view/regist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/HomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/RoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/RoleServiceIpm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/RoleServiceIpm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserServiceIpm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserServiceIpm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sql/shopv3.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Sql/shopv3.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ProductServiceIpm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ProductServiceIpm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/SizeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/SizeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/SizeServiceIpm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/SizeServiceIpm.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +60,9 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="package-info" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -91,9 +93,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/spring-boot-shopping-cart-master/spring-boot-shopping-cart-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -216,6 +219,15 @@
       <workItem from="1674275061877" duration="2854000" />
       <workItem from="1674485786753" duration="621000" />
       <workItem from="1674492547743" duration="3315000" />
+      <workItem from="1674627594553" duration="3261000" />
+      <workItem from="1674733701522" duration="4296000" />
+      <workItem from="1674790899965" duration="4358000" />
+      <workItem from="1674885843578" duration="3571000" />
+      <workItem from="1674972077591" duration="5137000" />
+      <workItem from="1675049972704" duration="4200000" />
+      <workItem from="1675064948614" duration="1150000" />
+      <workItem from="1675077254198" duration="4015000" />
+      <workItem from="1675610424726" duration="6000" />
     </task>
     <servers />
   </component>

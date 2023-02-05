@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: ADMIN
@@ -186,6 +187,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -196,61 +198,59 @@
 </head>
 
 <body>
-<h1>hello</h1>
-<%--<div class="container">--%>
-<%--    <div class="card">--%>
-<%--        <div class="container-fliud">--%>
-<%--            <div class="wrapper row">--%>
-<%--                <div class="preview col-md-6">--%>
 
-<%--                    <div class="preview-pic tab-content">--%>
-<%--                        <div class="tab-pane active" id="pic-1"><img src="${product.image}" /></div>--%>
-<%--                        <div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>--%>
-<%--                        <div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>--%>
-<%--                        <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>--%>
-<%--                        <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>--%>
-<%--                    </div>--%>
+<div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
 
-<%--                </div>--%>
-<%--                <div class="details col-md-6">--%>
-<%--                    <h3 class="product-title">${product.name}</h3>--%>
-<%--                    <div class="rating">--%>
-<%--                        <div class="stars">--%>
-<%--                            <span class="fa fa-star checked"></span>--%>
-<%--                            <span class="fa fa-star checked"></span>--%>
-<%--                            <span class="fa fa-star checked"></span>--%>
-<%--                            <span class="fa fa-star"></span>--%>
-<%--                            <span class="fa fa-star"></span>--%>
-<%--                        </div>--%>
-<%--                        <span class="review-no">41 reviews</span>--%>
-<%--                    </div>--%>
-<%--                    <p class="product-description">Thông tin</p>--%>
-<%--                    <h4 class="price">Giá thành: <span>${product.price.price}</span></h4>--%>
-<%--                    <h5 class="sizes">sizes:--%>
+                    <div class="preview-pic tab-content">
+                        <div class="tab-pane active" id="pic-1"><img src="${product.image}" /></div>
+                        <div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
+                        <div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
+                        <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
+                        <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>
+                    </div>
 
-<%--                        <span class="size" data-toggle="tooltip" title="small">s</span>--%>
-<%--                        <span class="size" data-toggle="tooltip" title="medium">m</span>--%>
-<%--                        <span class="size" data-toggle="tooltip" title="large">l</span>--%>
-<%--                        <span class="size" data-toggle="tooltip" title="xtra large">xl</span>--%>
-<%--                    </h5>--%>
-<%--                    <h5 class="colors">Chọn màu:--%>
-<%--                        <c:forEach var="i" items="${product.amountList}">--%>
-<%--                            <span class="color ${i.color}"></span>--%>
-<%--                        </c:forEach>--%>
-<%--                    </h5>--%>
-<%--                    <div class="action">--%>
-<%--                        <a href=""><button class="add-to-cart btn btn-default" type="button">add to cart</button></a>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</div>--%>
+                </div>
+                <div class="details col-md-6">
+                    <h3 class="product-title">${product.name}</h3>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <span class="review-no">41 reviews</span>
+                    </div>
+                    <p class="product-description">Thông tin</p>
+                    <h4 class="price">Giá thành: ₫ <span>${product.price.price}</span></h4>
+                    <h5 class="sizes">Sizes:
+                        <c:forEach var="i" items="${size}">
+                            <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off" value="${i}">
+                            <label style="background-color: #ff9f1a" class="btn btn-outline-danger" for="danger-outlined">${i}</label>
+                        </c:forEach>
+                    </h5>
+
+
+                    <div class="action">
+                        <a href=""><button class="add-to-cart btn btn-default" type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i> Thêm vào giỏ</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <%--        <p>${product.id}</p>--%>
 <%--        <p>${product.name}</p>--%>
 <%--    <img src="${product.image}" alt="">--%>
 <%--    <p>${product.productType.name}</p>--%>
-
+<script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</script>
 </body>
 </html>
 

@@ -84,7 +84,6 @@ public class LoginController {
         }
         model.addAttribute("roles", map);
         model.addAttribute("user", new User());
-
         return "regist";
     }
 
@@ -100,7 +99,6 @@ public class LoginController {
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         userService.save(user);
-
         return "redirect:user";
     }
 }

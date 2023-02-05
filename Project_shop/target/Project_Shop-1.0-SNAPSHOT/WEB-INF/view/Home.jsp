@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: ADMIN
@@ -84,11 +85,13 @@
                         <a class="dropdown-item" href="#">Blog</a>
                     </div>
                 </li>
+<%--                search         --%>
                 <li>
-                    <form  class="form-inline my-2 my-lg-0">
-                        <input style="width: 35rem" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+                    <form:form modelAttribute="searching" action="searchProduct" method="get" class="form-inline my-2 my-lg-0">
+                        <form:input path="keyword" style="width: 35rem" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form >
+                    </form:form >
                 </li>
                 <li style="margin-left: 10vh" class="nav-item ">
                     <a class="nav-link" href="cart/">
@@ -196,9 +199,11 @@
     </div>
     <div class="card-deck" style="padding: 0 10%;">
         <c:forEach var="i" items="${productShirt}" begin="0" end="7">
-            <div class="col-md-3 md-col" style="margin: 10px 0">
-                <div class="col-md">
-                    <img src="${i.image}" alt="" />
+            <a href="product/product_detail?id=${i.id}" style="color: black;">
+                <div class="col-md" >
+                    <div class="view overlay zoom">
+                        <img src="${i.image}" class="img-fluid " alt="smaple image">
+                    </div>
                     <div class="top-content">
                         <h5>${i.name}</h5>
                         <p class="dollar"><span class="in-dollar">₫</span><span>${i.price.price}</span></p>
@@ -208,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </c:forEach>
     </div>
 </div>
@@ -221,9 +226,11 @@
     </div>
     <div class="card-deck" style="padding: 0 10%;">
         <c:forEach var="i" items="${productPants}" begin="0" end="7">
-            <div class="col-md-3 md-col" style="margin: 10px 0">
-                <div class="col-md">
-                    <img src="${i.image}" alt="" />
+            <a href="product/product_detail?id=${i.id}" style="color: black;">
+                <div class="col-md" >
+                    <div class="view overlay zoom">
+                        <img src="${i.image}" class="img-fluid " alt="smaple image">
+                    </div>
                     <div class="top-content">
                         <h5>${i.name}</h5>
                         <p class="dollar"><span class="in-dollar">₫</span><span>${i.price.price}</span></p>
@@ -233,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </c:forEach>
     </div>
 </div>

@@ -3,6 +3,7 @@ package controller;
 import entity.Amount;
 import entity.Product;
 import entity.ProductType;
+import entity.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +15,7 @@ import service.ProductTypeService;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping(value = "product")
@@ -28,6 +30,15 @@ public class ProductController {
     @RequestMapping(value = "product_detail")
     public String detail(@RequestParam(name = "id")int id, Model model){
         model.addAttribute("product",productService.getProductById(id));
+        Map<Integer, String> colorMap = new HashMap<>();
+        Map<Integer, String> sizeMap = new HashMap<>();
+        List<Amount> amounts =amountService.all();
+        for (Amount i: amounts){
+            colorMap.put(i.getColor().getId(), i.getColor().getName());
+            sizeMap.put(i.getSize().getId(), i.getSize().getName());
+        }
+        model.addAttribute("color", colorMap);
+        model.addAttribute("size", sizeMap);
         return "Detail";
     }
 
